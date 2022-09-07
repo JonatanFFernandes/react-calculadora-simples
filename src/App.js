@@ -12,6 +12,9 @@ const App = () => {
 
   const backSpace = () => {
     setNumber(number.slice(0, -1));
+    if (number === "") {
+      setNumber(0);
+    }
   };
 
   const handleClick = (e) => {
